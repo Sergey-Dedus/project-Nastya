@@ -1,4 +1,5 @@
 import "../sass/index.scss";
+require("slick-carousel");
 import "./to-up.js";
 
 const gh = "hj";
