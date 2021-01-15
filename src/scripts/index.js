@@ -2,15 +2,15 @@ import "../sass/index.scss";
 require("slick-carousel");
 import "./to-up.js";
 
-const gh = "hj";
-alert("hrkl");
+// const gh = "hj";
+// alert("hrkl");
 
-let test = alert("trko");
+// let test = alert("trko");
 
 
-const helloWorldtq = "test hello";
-const tw = () => {
-  console.log("test console");
-};
+// const helloWorldtq = "test hello";
+// const tw = () => {
+//   console.log("test console");
+// };
 
-console.log(3);
+// console.log(3);
