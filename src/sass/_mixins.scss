@@ -1,0 +1,25 @@
+@mixin pointer-wrapper {
+  position: absolute;
+  top: -60%;
+  left: -15px;
+}
+
+@mixin pointer {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 50%;
+  width: 0;
+  height: 0;
+  border-left: 11px solid white;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  transform: rotate(180deg) translate(-1%, -50%);
+}
+
+@mixin pointer-span {
+  font-size: 12px;
+  padding: 0px 20px 0px 10px;
+  display: block;
+  color: #fff;
+}
