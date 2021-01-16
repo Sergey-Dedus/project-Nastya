@@ -324,11 +324,337 @@
     color: black;
 }
 
-<<<<<<< HEAD
-*{box-sizing:border-box}html{font-size:100%;font-family:"Poppins", Helvetica, sans-serif}h1,h2,h3,h4,ul,ol,p,body{margin:0;padding:0}input,button,a{outline:none}button,input{font-size:16px}a{text-decoration:none}body{background-color:#fff}.header-laptop{width:100%;height:75px;display:flex;justify-content:center}.header-laptop__wrapper{width:80%;min-width:1250px;height:100%;border:1px solid red;position:relative}.header-laptop__logo{position:absolute;top:50%;left:15px;transform:translate(-50%, -50%);width:0%}.header-laptop__icons{display:flex;position:absolute;top:50%;right:0px;transform:translate(-50%, -50%)}.menu{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:60%;min-width:725px}.menu__list{display:flex;list-style:none;align-items:center;justify-content:space-between}.menu__link{text-decoration:none;text-transform:uppercase;font-size:17px;color:#3a3a3a}.teste{width:100%;height:1000px;background-color:red}.t1{color:brown}.ftest{width:100%;height:80px;background-color:black}.product{position:relative;display:block}.product__pointer-wrapper{position:absolute;top:-60%;left:-15px}.product__pointer{position:relative;background:#ff9a52}.product__pointer:before{content:"";position:absolute;right:-1px;bottom:50%;width:0;height:0;border-left:11px solid white;border-top:12px solid transparent;border-bottom:12px solid transparent;transform:rotate(180deg) translate(-1%, -50%)}.product__pointer-span{font-size:12px;padding:0px 20px 0px 10px;display:block;color:#fff}.arivals{position:relative;display:block}.arivals__pointer-wrapper{position:absolute;top:-60%;left:-15px}.arivals__pointer{position:relative;background:#fd6b6b}.arivals__pointer:before{content:"";position:absolute;right:-1px;bottom:50%;width:0;height:0;border-left:11px solid white;border-top:12px solid transparent;border-bottom:12px solid transparent;transform:rotate(180deg) translate(-1%, -50%)}.arivals__pointer-span{font-size:12px;padding:0px 20px 0px 10px;display:block;color:#fff}@media screen and (max-width: 1250px){.header-laptop{height:150px}.header-laptop__wrapper{width:100%;min-width:auto}.header-laptop__logo{top:10%;left:50%;transform:translate(-50%, 0%);width:130px}.header-laptop__icons{top:10%;right:0px;transform:translate(-50%, 0%)}.menu{top:70%;left:50%;transform:translate(-50%, 0%)}}.top-banner{width:100%;height:50px;background-color:#0ab3a3;display:flex;align-items:center;justify-content:center}.top-banner__description{display:block;font-weight:normal;color:#fff}
-=======
-*{box-sizing:border-box}html{font-size:100%;font-family:"Poppins", Helvetica, sans-serif}h1,h2,h3,h4,ul,ol,p,body{margin:0;padding:0}input,button,a{outline:none}button,input{font-size:16px}a{text-decoration:none}.top-banner{width:100%;height:50px;background-color:#0ab3a3;display:flex;align-items:center;justify-content:center}.top-banner__description{display:block;font-weight:normal;color:#fff}.logo{width:100%;height:1050px;background-color:red}
->>>>>>> c4d74652aee4d8a5985929a16a6ce0e993354cc7
+/**
+ * Title: Outicons Flaticon Pack
+ * Author: Anton Saputro
+ * Source: http://www.flaticon.com/packs/outicons
+ * License:  CC BY 3.0 (http://creativecommons.org/licenses/by/3.0/)
+ */
+
+@font-face {
+  font-family: "fl-outicons";
+  src: url(src/fonts/fl-outicons.eot);
+  src: url(src/fonts/fl-outicons.eot#iefix) format("embedded-opentype"),
+    url(src/fonts/fl-outicons.woff) format("woff"),
+    url(src/fonts/fl-outicons.ttf) format("truetype"),
+    url(src/fonts/fl-outicons.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fl-outicons-ico,
+[class^="fl-outicons-"]:before,
+[class*=" fl-outicons-"]:before,
+[class^="fl-outicons-"]:after,
+[class*=" fl-outicons-"]:after {
+  font-family: fl-outicons;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fl-outicons-add31:before {
+  content: "\e000";
+}
+.fl-outicons-airplane116:before {
+  content: "\e001";
+}
+.fl-outicons-announcer1:before {
+  content: "\e002";
+}
+.fl-outicons-attach16:before {
+  content: "\e003";
+}
+.fl-outicons-backward5:before {
+  content: "\e004";
+}
+.fl-outicons-badge12:before {
+  content: "\e005";
+}
+.fl-outicons-bell76:before {
+  content: "\e006";
+}
+.fl-outicons-book270:before {
+  content: "\e007";
+}
+.fl-outicons-bookmark54:before {
+  content: "\e008";
+}
+.fl-outicons-building106:before {
+  content: "\e009";
+}
+.fl-outicons-calendar194:before {
+  content: "\e00a";
+}
+.fl-outicons-cancel29:before {
+  content: "\e00b";
+}
+.fl-outicons-check74:before {
+  content: "\e00c";
+}
+.fl-outicons-chevron1:before {
+  content: "\e00d";
+}
+.fl-outicons-chevron2:before {
+  content: "\e00e";
+}
+.fl-outicons-chevron3:before {
+  content: "\e00f";
+}
+.fl-outicons-chevron:before {
+  content: "\e010";
+}
+.fl-outicons-clock169:before {
+  content: "\e011";
+}
+.fl-outicons-cloud18:before {
+  content: "\e012";
+}
+.fl-outicons-cloud367:before {
+  content: "\e013";
+}
+.fl-outicons-copy1:before {
+  content: "\e014";
+}
+.fl-outicons-cut38:before {
+  content: "\e015";
+}
+.fl-outicons-diskette17:before {
+  content: "\e016";
+}
+.fl-outicons-dislike18:before {
+  content: "\e017";
+}
+.fl-outicons-down-arrow24:before {
+  content: "\e018";
+}
+.fl-outicons-download194:before {
+  content: "\e019";
+}
+.fl-outicons-expand10:before {
+  content: "\e01a";
+}
+.fl-outicons-export:before {
+  content: "\e01b";
+}
+.fl-outicons-eye130:before {
+  content: "\e01c";
+}
+.fl-outicons-facebook7:before {
+  content: "\e01d";
+}
+.fl-outicons-file128:before {
+  content: "\e01e";
+}
+.fl-outicons-file129:before {
+  content: "\e01f";
+}
+.fl-outicons-filter:before {
+  content: "\e020";
+}
+.fl-outicons-font14:before {
+  content: "\e021";
+}
+.fl-outicons-forbidden17:before {
+  content: "\e022";
+}
+.fl-outicons-forward27:before {
+  content: "\e023";
+}
+.fl-outicons-gear40:before {
+  content: "\e024";
+}
+.fl-outicons-google4:before {
+  content: "\e025";
+}
+.fl-outicons-grid2:before {
+  content: "\e026";
+}
+.fl-outicons-headphones46:before {
+  content: "\e027";
+}
+.fl-outicons-heart373:before {
+  content: "\e028";
+}
+.fl-outicons-house204:before {
+  content: "\e029";
+}
+.fl-outicons-information83:before {
+  content: "\e02a";
+}
+.fl-outicons-laptop4:before {
+  content: "\e02b";
+}
+.fl-outicons-left-arrow25:before {
+  content: "\e02c";
+}
+.fl-outicons-like83:before {
+  content: "\e02d";
+}
+.fl-outicons-lines7:before {
+  content: "\e02e";
+}
+.fl-outicons-list100:before {
+  content: "\e02f";
+}
+.fl-outicons-lock8:before {
+  content: "\e030";
+}
+.fl-outicons-magnifying-glass33:before {
+  content: "\e031";
+}
+.fl-outicons-magnifying-glass34:before {
+  content: "\e032";
+}
+.fl-outicons-magnifying-glass35:before {
+  content: "\e033";
+}
+.fl-outicons-mail2:before {
+  content: "\e034";
+}
+.fl-outicons-microphone10:before {
+  content: "\e035";
+}
+.fl-outicons-minimize1:before {
+  content: "\e036";
+}
+.fl-outicons-minus6:before {
+  content: "\e037";
+}
+.fl-outicons-move1:before {
+  content: "\e038";
+}
+.fl-outicons-news:before {
+  content: "\e039";
+}
+.fl-outicons-notepad20:before {
+  content: "\e03a";
+}
+.fl-outicons-padlock86:before {
+  content: "\e03b";
+}
+.fl-outicons-pause51:before {
+  content: "\e03c";
+}
+.fl-outicons-pencil8:before {
+  content: "\e03d";
+}
+.fl-outicons-pencil9:before {
+  content: "\e03e";
+}
+.fl-outicons-phone14:before {
+  content: "\e03f";
+}
+.fl-outicons-photo-camera5:before {
+  content: "\e040";
+}
+.fl-outicons-picture54:before {
+  content: "\e041";
+}
+.fl-outicons-pin12:before {
+  content: "\e042";
+}
+.fl-outicons-play127:before {
+  content: "\e043";
+}
+.fl-outicons-pointer31:before {
+  content: "\e044";
+}
+.fl-outicons-power115:before {
+  content: "\e045";
+}
+.fl-outicons-print:before {
+  content: "\e046";
+}
+.fl-outicons-question5:before {
+  content: "\e047";
+}
+.fl-outicons-refresh8:before {
+  content: "\e048";
+}
+.fl-outicons-right-arrow30:before {
+  content: "\e049";
+}
+.fl-outicons-sad70:before {
+  content: "\e04a";
+}
+.fl-outicons-sales2:before {
+  content: "\e04b";
+}
+.fl-outicons-screen88:before {
+  content: "\e04c";
+}
+.fl-outicons-share53:before {
+  content: "\e04d";
+}
+.fl-outicons-share55:before {
+  content: "\e04e";
+}
+.fl-outicons-shopping-cart13:before {
+  content: "\e04f";
+}
+.fl-outicons-smartphone65:before {
+  content: "\e050";
+}
+.fl-outicons-smiley3:before {
+  content: "\e051";
+}
+.fl-outicons-sort2:before {
+  content: "\e052";
+}
+.fl-outicons-speech-balloon2:before {
+  content: "\e053";
+}
+.fl-outicons-speech-bubble34:before {
+  content: "\e054";
+}
+.fl-outicons-star6:before {
+  content: "\e055";
+}
+.fl-outicons-star7:before {
+  content: "\e056";
+}
+.fl-outicons-support1:before {
+  content: "\e057";
+}
+.fl-outicons-tablet4:before {
+  content: "\e058";
+}
+.fl-outicons-tags:before {
+  content: "\e059";
+}
+.fl-outicons-trash1:before {
+  content: "\e05a";
+}
+.fl-outicons-treasure:before {
+  content: "\e05b";
+}
+.fl-outicons-truck72:before {
+  content: "\e05c";
+}
+.fl-outicons-twitter4:before {
+  content: "\e05d";
+}
+.fl-outicons-up-arrow46:before {
+  content: "\e05e";
+}
+.fl-outicons-upload142:before {
+  content: "\e05f";
+}
+.fl-outicons-user189:before {
+  content: "\e060";
+}
+.fl-outicons-warning5:before {
+  content: "\e061";
+}
+.fl-outicons-white-flag1:before {
+  content: "\e062";
+}
+.fl-outicons-wifi110:before {
+  content: "\e063";
+}
+
+*{box-sizing:border-box}html{font-size:100%;font-family:"Poppins", Helvetica, sans-serif}h1,h2,h3,h4,ul,ol,p,body{margin:0;padding:0}input,button,a{outline:none}button,input{font-size:16px}a{text-decoration:none}body{background-color:#fff}.header-laptop{width:100%;height:75px;display:flex;justify-content:center}.header-laptop__wrapper{width:80%;min-width:1250px;height:100%;border:1px solid red;position:relative}.header-laptop__logo{position:absolute;top:50%;left:15px;transform:translate(-50%, -50%);width:0%}.header-laptop__icons{display:flex;justify-content:space-between;position:absolute;top:50%;right:15px;width:18%;transform:translateY(-50%);border:1px solid blue}.menu{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:60%;min-width:725px}.menu__list{display:flex;list-style:none;align-items:center;justify-content:space-between}.menu__link{text-decoration:none;text-transform:uppercase;font-size:17px;color:#3a3a3a}.teste{width:100%;height:1000px;background-color:red}.t1{color:brown}.ftest{width:100%;height:80px;background-color:black}.product{position:relative;display:block}.product__pointer-wrapper{position:absolute;top:-60%;left:-15px}.product__pointer{position:relative;background:#ff9a52}.product__pointer:before{content:"";position:absolute;right:-1px;bottom:50%;width:0;height:0;border-left:11px solid white;border-top:12px solid transparent;border-bottom:12px solid transparent;transform:rotate(180deg) translate(-1%, -50%)}.product__pointer-span{font-size:12px;padding:0px 20px 0px 10px;display:block;color:#fff}.arivals{position:relative;display:block}.arivals__pointer-wrapper{position:absolute;top:-60%;left:-15px}.arivals__pointer{position:relative;background:#fd6b6b}.arivals__pointer:before{content:"";position:absolute;right:-1px;bottom:50%;width:0;height:0;border-left:11px solid white;border-top:12px solid transparent;border-bottom:12px solid transparent;transform:rotate(180deg) translate(-1%, -50%)}.arivals__pointer-span{font-size:12px;padding:0px 20px 0px 10px;display:block;color:#fff}.font{transition:0.5s;color:#3a3a3a;cursor:pointer}.font:hover{color:#0ab3a3;transition:0.5s}.heart{position:relative}.circle{position:absolute;top:-40%;left:100%;background-color:#0ab3a3;border-radius:50%;width:20px;height:20px}.circle::before{content:"";position:relative}.circle::after{content:"0";color:#ffffff;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}@media screen and (max-width: 1250px){.header-laptop{height:150px}.header-laptop__wrapper{width:100%;min-width:auto}.header-laptop__logo{top:10%;left:50%;transform:translate(-50%, 0%);width:130px}.header-laptop__icons{top:10%;right:2%;transform:translateY(0%)}.menu{top:70%;left:50%;transform:translate(-50%, 0%)}}.top-banner{width:100%;height:50px;background-color:#0ab3a3;display:flex;align-items:center;justify-content:center}.top-banner__description{display:block;font-weight:normal;color:#fff}
 
 
 /*# sourceMappingURL=main.css.map*/
