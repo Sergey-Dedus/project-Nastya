@@ -71,6 +71,9 @@
 }
 .fl-outicons-chevron2:before {
   content: "\e00e";
+  font-size: 10px;
+  color: #0ab3a3;
+  font-weight: 700;
 }
 .fl-outicons-chevron3:before {
   content: "\e00f";

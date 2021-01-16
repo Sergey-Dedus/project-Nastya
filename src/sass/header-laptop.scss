@@ -51,9 +51,33 @@
     text-transform: uppercase;
     font-size: 17px;
     color: $color_1;
+    transition: 0.5s;
+    // =
+    display: inline-block;
+    line-height: 1;
+    &:hover {
+      color: $color_2;
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 0%;
+      background-color: $color_2;
+      color: $color_2;
+      transition: width 0.5s ease-in-out;
+    }
   }
 }
+.menu__link:hover:after,
+.menu__link:focus:after {
+  width: 100%;
+}
 
+.tf {
+  width: 10px;
+  color: blue;
+}
 // test
 .teste {
   width: 100%;
@@ -119,30 +143,32 @@
   }
 }
 
-.heart {
+.icon {
   position: relative;
-}
-.circle {
-  position: absolute;
-  top: -40%;
-  left: 100%;
-  background-color: $color_2;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  &::before {
-    content: "";
-    position: relative;
-  }
-  &::after {
-    content: "0";
-    color: #ffffff;
+  &__circle {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: -40%;
+    left: 100%;
+    background-color: $color_2;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    &::before {
+      content: "";
+      position: relative;
+    }
+    &::after {
+      content: "0";
+      color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
+
 @media screen and (max-width: 1250px) {
   .header-laptop {
     height: 150px;
