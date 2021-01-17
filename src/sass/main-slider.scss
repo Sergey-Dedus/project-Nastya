@@ -19,18 +19,45 @@
 }
 
 // ===
-.containers {
+.slide-wrapper {
   position: relative;
   text-align: center;
-  color: blue;
-  &__s {
+
+  &__text-container {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
     font-size: 35px;
+    border: 1px solid red;
+    font-weight: normal;
   }
 }
-
-// .tra {
-//   animation-iteration-count: infinite;
-// }
+.text-container {
+  &__up-title {
+    font-size: 2rem;
+    color: $color_6;
+  }
+  &__title {
+    font-size: 3.25rem;
+    color: $color_7;
+  }
+  &__subtitle {
+    font-size: 0.9rem;
+    color: $color_6;
+  }
+  &__btn {
+    font-size: 16px;
+    color: $color_5;
+    background-color: $color_2;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 40px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color: darkcyan;
+    }
+  }
+}
