@@ -29,6 +29,10 @@
     width: 18%;
     transform: translateY(-50%);
     border: 1px solid blue;
+    min-width: 185px;
+  }
+  &__bar-mobile {
+    display: none;
   }
 }
 
@@ -232,4 +236,22 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header-laptop {
+    height: 75px;
+    &__bar-mobile {
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+    &__icons {
+      left: 50%;
+      right: 5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .menu {
+    display: none;
+  }
 }
