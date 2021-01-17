@@ -1,7 +1,15 @@
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
 .slick-slide img {
   width: 100%;
-  height: 80vh;
+  height: 82vh;
 }
+// .slick-slide video {
+//   width: 100vh;
+//   // height: 80vh;
+// }
 .slick-dots {
   justify-content: center;
   margin: 0;
@@ -30,21 +38,23 @@
     transform: translate(-50%, -50%);
     font-size: 35px;
     border: 1px solid red;
-    font-weight: normal;
   }
 }
 .text-container {
   &__up-title {
     font-size: 2rem;
     color: $color_6;
+    font-weight: $font-weight_slider;
   }
   &__title {
     font-size: 3.25rem;
     color: $color_7;
+    font-weight: $font-weight_slider;
   }
   &__subtitle {
     font-size: 0.9rem;
     color: $color_6;
+    font-weight: $font-weight_slider;
   }
   &__btn {
     font-size: 16px;
@@ -56,8 +66,18 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     transition: 0.5s;
+    font-weight: $font-weight_slider;
     &:hover {
       background-color: darkcyan;
     }
   }
+  &__video-color {
+    color: $color_5;
+  }
+}
+
+#video {
+  height: 82vh;
+  object-fit: cover;
+  width: 100%;
 }
