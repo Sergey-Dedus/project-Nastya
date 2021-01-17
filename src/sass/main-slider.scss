@@ -1,0 +1,32 @@
+.slick-slide img {
+  width: 100%;
+  height: 80vh;
+}
+.slick-dots {
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+  bottom: 20px;
+}
+
+.slick-dots li {
+  margin: 0 0 0.25rem;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+// ===
+.containers {
+  position: relative;
+  text-align: center;
+  color: blue;
+  &__s {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 35px;
+  }
+}
