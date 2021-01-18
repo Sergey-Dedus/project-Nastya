@@ -32,7 +32,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  position: relative; //========
+  position: relative;
+
   &__picture {
     width: 100%;
     // height: 80%;
@@ -56,7 +57,8 @@
     bottom: 0;
     right: 0;
     top: 30%;
-    // background: yellow;
+    background: $color_5; //background
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     padding: 5px;
     display: none;
     z-index: 50;
@@ -67,6 +69,98 @@
   display: block;
   transform: scale(1.4, 2);
 }
+
+// description-visible
+.description-visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  &__title {
+    font-size: 0.85vw;
+    font-weight: $font-weight_slider;
+    color: $color_8;
+  }
+
+  &__subtitle {
+    font-size: 0.9vw;
+    font-weight: $font-weight_slider;
+    color: $color_1;
+  }
+  &__new-price {
+    color: $color_4;
+    font-size: 1.05vw;
+    margin-right: 0.5em;
+  }
+  &__old-price {
+    color: $color_1;
+    font-size: 1.05vw;
+    text-decoration: line-through;
+  }
+}
+.fl-outicons-star7:before {
+  content: "\e056";
+  font-size: 14px;
+  padding: 0 2px;
+  color: yellow;
+}
+
+// info-container
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  line-height: 10%;
+  &__title {
+    margin-top: 0.5em;
+    font-size: 0.85vw; //0.85
+    font-weight: $font-weight_slider;
+    color: $color_8;
+    transform: scale(0.7, 0.5);
+  }
+
+  &__subtitle {
+    font-size: 0.9vw;
+    font-weight: $font-weight_slider;
+    color: $color_1;
+    transform: scale(0.7, 0.5);
+  }
+  &__rating {
+    transform: scale(0.7, 0.5);
+  }
+  &__price {
+    transform: scale(0.7, 0.5);
+  }
+  &__new-price {
+    color: $color_4;
+    font-size: 1.05vw;
+    margin-right: 0.5em;
+    transform: scale(0.7, 0.5);
+  }
+  &__old-price {
+    color: $color_1;
+    font-size: 1.05vw;
+    text-decoration: line-through;
+    transform: scale(0.7, 0.5);
+  }
+  &__btn {
+    font-size: 8px;
+    width: 100%;
+    height: 20px;
+    background-color: $color_2;
+    color: $color_5;
+    border: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color: darkcyan;
+    }
+  }
+}
+
 // ====hover-visible
 .hover-visible {
   &__wrapper {
@@ -88,8 +182,9 @@
 
 .picture-container {
   display: flex;
+  justify-content: space-between; //--========
   &__main-img-container {
-    width: 80%;
+    width: 75%; //-------80
     // height: 80%;
     border: 1px solid green;
     background-color: brown;
@@ -104,32 +199,31 @@
     }
   }
   &__select-img {
-    width: 20%;
-    background-color: darkblue;
+    width: 22%; //---------20
     display: flex; //-------------------------
     flex-direction: column;
     justify-content: space-between;
   }
-  &__picture {
-    // width: 100%;
+  //   &__picture {
+  //     // width: 100%;
 
-    & img {
-      display: block; //============
-      width: 100%;
-      min-width: 100%;
-      //   object-fit: cover;
-    }
-  }
+  //     & img {
+  //       //   display: block; //============
+  //       //   width: 100%;
+  //       //   min-width: 100%;
+  //       //   object-fit: cover;
+  //     }
+  //   }
 }
 
 // =
 .select-img__picture {
   width: 100%;
-  height: 33.333333%;
-  border: 1px solid white;
+  height: 32%; //33.333333
   & img {
     // display: block; //============
     width: 100%;
+    height: 100%;
     // min-width: 100%;
     // object-fit: cover;
   }
