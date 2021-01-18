@@ -1,0 +1,86 @@
+.shop-cards {
+  width: 100%;
+  //   height: 57vh; //417px
+  border: 1px solid green;
+  display: flex;
+  &__card {
+    width: 33.333333%;
+    height: 100%;
+    border: 1px solid red;
+    position: relative;
+    & img {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__card:nth-child(2) {
+    margin: 0 15px;
+  }
+}
+
+.text-shop {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  width: 60%;
+  text-align: center;
+  &__up-title {
+    font-size: 1.2vw;
+    color: $color_6;
+    font-weight: $font-weight_slider;
+  }
+  &__title {
+    font-size: 1.7vw;
+    color: $color_7;
+    font-weight: $font-weight_slider;
+  }
+  &__subtitle {
+    font-size: 0.6vw;
+    color: $color_6;
+    font-weight: $font-weight_slider;
+  }
+  &__btn {
+    font-size: 1vw;
+    color: $color_5;
+    background-color: $color_2;
+    padding: 0.5em 1.5em;
+    border: none;
+    margin-top: 1em;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: $font-weight_slider;
+    &:hover {
+      background-color: darkcyan;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shop-cards {
+    flex-wrap: wrap;
+    &__card {
+      width: 100%;
+    }
+    &__card:nth-child(2) {
+      margin: 0 0px;
+    }
+  }
+  .text-shop {
+    &__up-title {
+      font-size: 2.4vw;
+    }
+    &__title {
+      font-size: 3.4vw;
+    }
+    &__subtitle {
+      font-size: 1.3vw;
+    }
+    &__btn {
+      font-size: 2vw;
+      padding: 1em 3em;
+    }
+  }
+}
