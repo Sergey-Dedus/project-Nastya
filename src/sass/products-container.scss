@@ -88,12 +88,14 @@
 
 .picture-container {
   display: flex;
-  &__main-img {
+  &__main-img-container {
     width: 80%;
     // height: 80%;
     border: 1px solid green;
     background-color: brown;
     overflow: hidden;
+  }
+  &__main-img {
     & img {
       display: block; //============
       width: 100%;
