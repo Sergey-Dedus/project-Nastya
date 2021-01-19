@@ -1,28 +1,7 @@
 @import "./variables";
 
 .top-banner {
-  display: none;
-  &__description {
-    display: block;
-    font-weight: normal;
-    color: $color_5;
-  }
-  &__close {
-    position: absolute;
-    left: 97%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    border: none;
-    padding: 0px;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  &__icon {
-    color: $color_5;
-  }
-}
-
-.top-banner.is-active {
+  display: block;
   width: 100%;
   height: 50px;
   background-color: $color_2;
@@ -30,8 +9,38 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  &__description {
+    display: block;
+    font-weight: normal;
+    color: $color_5;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 10%;
+  }
+  &__close {
+    position: absolute;
+    left: 97%;
+    top: 30%;
+    transform: translate(-100%, -50%);
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  &__icon {
+    color: $color_5;
+  }
 }
-//<<<<<<< HEAD
-//=======
 
-//>>>>>>> c4d74652aee4d8a5985929a16a6ce0e993354cc7
+.top-banner.is-deactivate {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .top-banner {
+    &__description {
+      font-size: 2vw;
+    }
+  }
+}

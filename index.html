@@ -9,22 +9,22 @@
 <body>
     <header class="page-header">
         <!-- top-banner -->
-        <section class="page-header__top-banner top-banner is-active">
+        <section class="page-header__top-banner top-banner">
             <span class="top-banner__description">FREE SHOPPING on over ORDERS 75 EURO. 15% OFF on ALL PRODUCTS, PROMO CODE: #NASTYA. SHOP NOW</span>
         <button class="top-banner__close"><span class="fl-outicons-cancel29 top-banner__icon"></span></button>
         </section>
         <!-- header laptop -->
         <section class="page-header__header-laptop header-laptop">
-            <div class="header-laptop__wrapper modals">
-                <!-- <div class="modals__window"></div> -->
+            <div class="header-laptop__wrapper">
+                <div class="modal-douter"></div>
             <div class="header-laptop__logo">
                 <img src="./src/img/my-shop-logo-1610442463.jpg" alt="Nastya.">
             </div>
             <div class="header-laptop__menu menu">
                 <ul class="menu__list">
-                    <li class="menu__title modal">
-                        <a href="#" class="menu__link">clothes</a> <span class="fl-outicons-chevron2"></span>
-                        <div class="modals__window"></div>
+                    <li class="menu__title modals">
+                        <a href="#" class="menu__link clothes">clothes</a> <span class="fl-outicons-chevron2"></span>
+                        <div class="modals__window">123</div>
                     </li>
                     <li class="menu__title">
                         <a href="#" class="menu__link">accessories</a>
@@ -60,7 +60,42 @@
                 <div class="icon__circle"></div></div>
             </div>
             <div class="header-laptop__bar-mobile"><span class="fl-outicons-lines7"></span></div>
+           
+            <!-- mobile-bar -->
+            <div class="header-laptop__mobile-bar mobile-bar">
+                <div>
+                    <ul class="menu__list">
+                        <li class="menu__title modals">
+                            <a href="#" class="menu__link clothes">clothes</a> <span class="fl-outicons-chevron2"></span>
+                            <div class="modals__window">123</div>
+                        </li>
+                        <li class="menu__title">
+                            <a href="#" class="menu__link">accessories</a>
+                        </li>
+                        <li class="menu__title arivals">
+                            <div class="arivals__pointer-wrapper">
+                                <div class="arivals__pointer"><span class="arivals__pointer-span">SALE</span></div>
+                            </div>
+                            <a href="#" class="menu__link">new arivals</a>
+                        </li>
+                        <li class="menu__title">
+                            <a href="#" class="menu__link">collection</a>
+                        </li>
+                        <li class="menu__title product">
+                            <div class="product__pointer-wrapper">
+                                <div class="product__pointer"><span class="product__pointer-span">HOT</span></div>
+                            </div>
+                            <a href="#" class="menu__link">product</a>
+                        </li>
+                        <li class="menu__title">
+                            <a href="#" class="menu__link">contact us</a>
+                        </li>
+                    </ul>
+            
+                </div>
             </div>
+            </div>
+            
         </section>
         <!-- header mobile -->
         <section class="page-header__header-mobile header-mobile"></section>
@@ -359,7 +394,15 @@
             <h1 class="t1">1235</h1>
         </div>
     </main>
-    <footer class="ftest">footer</footer>
+    <footer class="ftest">footer
+        <section class="modal-test">
+            <div class="diva1">1m</div>
+            <br>
+            <br>
+            <br>
+            <div class="diva2">2m</div>
+        </section>
+    </footer>
     <script src="./build/bundle.js"></script>
 </body>
 </html>

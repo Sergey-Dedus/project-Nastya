@@ -35,3 +35,39 @@
 //     }
 // } 
 
+
+// // ==modal is worked
+// $('.diva1').hover(function(){
+// 	$('.diva2').addClass('hovered');
+// }, function() {
+// 	$('.diva2').removeClass('hovered');
+// });
+
+// ==modal is worked
+$('.clothes').hover(function(){
+	$('.modal-douter').addClass('is-active');
+}, function() {
+	$('.modal-douter').removeClass('is-active');
+});
+// =
+$('.modal-douter.is-active').hover(function(){
+	$('.modal-douter').addClass('is-active');
+}, function() {
+	$('.modal-douter').removeClass('is-active');
+});
+
+
+
+
+// ==// ==modal is worked
+$('.clothes').click(function(){
+	$('.modal-douter').addClass('is-active');
+}, function() {
+	$('.modal-douter').removeClass('is-active');
+});
+// =
+$('.modal-douter.is-active').hover(function(){
+	$('.modal-douter').addClass('is-active');
+}, function() {
+	$('.modal-douter').removeClass('is-active');
+});
