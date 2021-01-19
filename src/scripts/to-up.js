@@ -6,6 +6,13 @@ $('.modal-douter .is-active').mouseleave(function(){
     $('.modal-douter').removeClass('is-active');
 })
 
+// =
+$('.open-modal').mouseover(function(){
+    $('.block-popup, .overlay').fadeIn();
+})
+// =
+
+
 // setTimeout(function () {
 // $('.clothes').hover(function(){
 // 	$('.modal-douter').addClass('is-active');
