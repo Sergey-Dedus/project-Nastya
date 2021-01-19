@@ -71,3 +71,22 @@ $('.modal-douter.is-active').hover(function(){
 }, function() {
 	$('.modal-douter').removeClass('is-active');
 });
+
+// ==
+// $('.header-laptop__bar-mobile').click(function () {
+//     $('.top-banner').addClass('is-deactivate');
+// });
+
+// =============================================
+// $(document).ready(function(){
+//     $(".header-laptop__bar-mobile").click(function () {
+//         if ($(".mobile-bar").hasClass(".is-deactivate")) {
+//             $(".mobile-bar").removeClass(".is-deactivate")
+//         } else {
+//             $(".mobile-bar").addClass(".is-deactivate")
+//         }
+//     });
+
+$('.header-laptop__bar-mobile').on('click', function(){
+    $('.mobile-bar').toggleClass('is-deactivate');
+})

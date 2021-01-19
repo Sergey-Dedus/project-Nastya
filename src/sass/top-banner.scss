@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 60;
   &__description {
     display: block;
     font-weight: normal;
