@@ -50,27 +50,27 @@ $('.clothes').hover(function(){
 	$('.modal-douter').removeClass('is-active');
 });
 // =
-$('.modal-douter.is-active').hover(function(){
-	$('.modal-douter').addClass('is-active');
-}, function() {
-	$('.modal-douter').removeClass('is-active');
-});
+// $('.modal-douter.is-active').hover(function(){
+// 	$('.modal-douter').addClass('is-active');
+// }, function() {
+// 	$('.modal-douter').removeClass('is-active');
+// });
 
 
 
 
 // ==// ==modal is worked
-$('.clothes').click(function(){
-	$('.modal-douter').addClass('is-active');
-}, function() {
-	$('.modal-douter').removeClass('is-active');
-});
-// =
-$('.modal-douter.is-active').hover(function(){
-	$('.modal-douter').addClass('is-active');
-}, function() {
-	$('.modal-douter').removeClass('is-active');
-});
+// $('.clothes').click(function(){
+// 	$('.modal-douter').addClass('is-active');
+// }, function() {
+// 	$('.modal-douter').removeClass('is-active');
+// });
+// // =
+// $('.modal-douter.is-active').hover(function(){
+// 	$('.modal-douter').addClass('is-active');
+// }, function() {
+// 	$('.modal-douter').removeClass('is-active');
+// });
 
 // ==
 // $('.header-laptop__bar-mobile').click(function () {
