@@ -25,12 +25,12 @@
 
 
 function hideMenu() {
-  $('.modal-new').slideUp(700);
+  $('.modal-2').slideUp(700);
 }
 function showMenu() {
-  $('.modal-new').slideDown(700);
+  $('.modal-2').slideDown(700);
 }
 $(document).ready(function() {
   $(".clothes").on("mouseover", showMenu);
-  $(".menu__list").on(" mouseleave", hideMenu); 
+  $(".menu__title").on(" mouseleave", hideMenu); 
 });
