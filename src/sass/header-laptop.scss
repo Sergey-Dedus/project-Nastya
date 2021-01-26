@@ -245,38 +245,51 @@
   .header-laptop {
     height: 150px;
     &__wrapper {
-      width: 100%;
+      width: 95%;
       min-width: auto;
       display: flex;
       justify-content: center;
       align-items: flex-end;
     }
     &__logo {
-      // top: 10%;
-      // left: 50%;
-      // transform: translate(-50%, -0%);
-      width: 0;
       position: absolute;
       top: 10%;
     }
     &__icons {
-      // top: 10%;
-      // right: 2%;
-      // transform: translateY(0%);
+      display: flex;
+      min-width: 185px;
+      margin-right: 50px;
+      position: absolute;
+      top: 10%;
+      right: 0;
     }
   }
   .menu {
-    // top: 70%;
-    // left: 50%;
-    // transform: translate(-50%, -0%);
+    min-width: 725px;
+    height: auto;
     width: 80%;
-    display: unset;
+    justify-content: center;
+    &__list {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-right: 0px;
+    }
+    &__link {
+      padding-bottom: 0;
+      margin-bottom: 35px;
+      &::before {
+        top: 30px;
+      }
+    }
   }
-}
-.ttt {
-  height: 0;
-  align-items: unset;
-  display: unset;
+  .ttt {
+    height: auto;
+    align-items: unset;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
