@@ -26,13 +26,36 @@
   &__products-menu {
     height: 70%;
   }
-  &__picture {
+  &__picture-menu {
     height: 30%;
   }
 }
 .products-menu {
   display: flex;
   justify-content: space-between;
+  &__grid {
+    width: 20%;
+    border: 1px solid red;
+  }
+  &__title {
+    font-weight: normal;
+    color: $color_1;
+    font-size: 14px;
+  }
+  &__link {
+    font-size: 12px;
+    color: $color_8;
+  }
+}
+
+.picture-menu {
+  display: flex;
+  justify-content: space-between;
+  &__product {
+    width: 32%;
+    height: 100%;
+    background-color: $color_9;
+  }
 }
 
 @media screen and (max-width: 1250px) {
