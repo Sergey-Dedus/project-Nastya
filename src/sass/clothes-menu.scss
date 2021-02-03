@@ -41,20 +41,76 @@
     font-weight: normal;
     color: $color_1;
     font-size: 14px;
+    padding-bottom: 1vw;
   }
   &__link {
     font-size: 12px;
     color: $color_8;
+    &:hover {
+      color: $color_2;
+    }
   }
 }
 
 .picture-menu {
   display: flex;
   justify-content: space-between;
-  &__product {
+  &__product-menu {
     width: 32%;
     height: 100%;
-    background-color: $color_9;
+    // background-color: $color_9;
+    background-image: url(../img/sample-1m.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    & a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+    }
+  }
+}
+
+.product-menu {
+  &__t1 {
+    width: 70%;
+    height: 100%;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__tt1 {
+    width: 100%;
+    // height: 50%;
+    border: 1px solid green;
+    & h2 {
+      font-size: 1vw;
+      color: $color_6;
+      font-weight: normal;
+      height: 100%;
+    }
+    & h3 {
+      font-size: 1.2vw;
+      color: $color_7;
+      font-weight: normal;
+      height: 100%;
+    }
+    & h4 {
+      font-size: 0.8vw;
+      color: $color_6;
+      font-weight: normal;
+      height: 100%;
+    }
+  }
+  &__t2 {
+    width: 30%;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
