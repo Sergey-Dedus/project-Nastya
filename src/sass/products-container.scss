@@ -63,12 +63,12 @@
   }
   &__hover-visible {
     width: 100%;
-    // height: 600px;
+    height: 80%; //пропорциональное увеличение блока
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
-    top: 30%;
+    top: 14%;
     background: $color_5; //background
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     padding: 5px;
@@ -79,7 +79,7 @@
 
 .visible-block:hover .visible-block__hover-visible {
   display: block;
-  transform: scale(1.4, 2);
+  transform: scale(1.4, 1.4);
 }
 
 // description-visible
