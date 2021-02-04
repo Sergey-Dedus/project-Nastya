@@ -217,11 +217,32 @@
 .select-img__picture {
   width: 100%;
   height: 32%;
+  transition: 0.5s;
+  border: 1px solid transparent;
+  cursor: pointer;
+
   & img {
     width: 100%;
     height: 100%;
   }
+  &:hover {
+    border: 1px solid $color_2;
+  }
 }
+
+.pic-active {
+  border: 1px solid $color_2;
+}
+.pic-active_2 {
+  border: 1px solid $color_2;
+}
+.pic-active_3 {
+  border: 1px solid $color_2;
+}
+.pic-active_4 {
+  border: 1px solid $color_2;
+}
+
 @media screen and (max-width: 1250px) {
   .products-container {
     &__products-wrapper {

@@ -34,3 +34,25 @@ product_4.addEventListener('click', function(event) {
         document.getElementById("bigImg4").src = iconImg4.getAttribute('src'); 
     }
 });
+
+
+// == активная рамка на выбранной картинке == 
+$(".select-img_1").on("click", ".select-img__picture", function(){
+	$(".select-img_1 .select-img__picture").removeClass("pic-active"); //удаляем класс во всех вкладках
+	$(this).addClass("pic-active"); //добавляем класс текущей (нажатой)
+});
+
+$(".select-img_2").on("click", ".select-img__picture", function(){
+	$(".select-img_2 .select-img__picture").removeClass("pic-active_2"); //удаляем класс во всех вкладках
+	$(this).addClass("pic-active_2"); //добавляем класс текущей (нажатой)
+});
+
+$(".select-img_3").on("click", ".select-img__picture", function(){
+	$(".select-img_3 .select-img__picture").removeClass("pic-active_3"); //удаляем класс во всех вкладках
+	$(this).addClass("pic-active_3"); //добавляем класс текущей (нажатой)
+});
+
+$(".select-img_4").on("click", ".select-img__picture", function(){
+	$(".select-img_4 .select-img__picture").removeClass("pic-active_4"); //удаляем класс во всех вкладках
+	$(this).addClass("pic-active_4"); //добавляем класс текущей (нажатой)
+});
