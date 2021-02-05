@@ -124,38 +124,36 @@
   justify-content: space-between;
   text-align: center;
   height: 100%;
-  line-height: 10%;
+  line-height: 50%;
   &__title {
     margin-top: 0.5em;
     font-size: 0.85vw; //0.85
     font-weight: $font-weight_slider;
     color: $color_8;
-    transform: scale(0.7, 0.5);
+    // transform: scale(0.7, 0.5);
   }
 
   &__subtitle {
     font-size: 0.9vw;
     font-weight: $font-weight_slider;
     color: $color_1;
-    transform: scale(0.7, 0.5);
+    // transform: scale(0.7, 0.5);
   }
   &__rating {
-    transform: scale(0.7, 0.5);
+    transform: scale(0.7, 0.7);
   }
-  &__price {
-    transform: scale(0.7, 0.5);
-  }
+
   &__new-price {
     color: $color_4;
     font-size: 1.05vw;
     margin-right: 0.5em;
-    transform: scale(0.7, 0.5);
+    // transform: scale(0.7, 0.5);
   }
   &__old-price {
     color: $color_1;
     font-size: 1.05vw;
     text-decoration: line-through;
-    transform: scale(0.7, 0.5);
+    // transform: scale(0.7, 0.5);
   }
   &__btn {
     font-size: 0.5vw;
