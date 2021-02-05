@@ -34,8 +34,10 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  // overflow: hidden; //==========
   &__col-1 {
     width: 25%;
+    display: none; //==========
   }
   &__col-wrapper {
     margin: 0 5px;

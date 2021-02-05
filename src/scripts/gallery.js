@@ -56,3 +56,37 @@ $(".select-img_4").on("click", ".select-img__picture", function(){
 	$(".select-img_4 .select-img__picture").removeClass("pic-active_4"); //удаляем класс во всех вкладках
 	$(this).addClass("pic-active_4"); //добавляем класс текущей (нажатой)
 });
+
+
+
+// ==анимация появления плиток
+let block_show = false;
+ 
+function scrollTracking(){
+	if (block_show) {
+		return false;
+	}
+ 
+	let wt = $(window).scrollTop();
+	let wh = $(window).height();
+	let et = $('.grid-container').offset().top;
+	let eh = $('.grid-container').outerHeight();
+	let dh = $(document).height();   
+ 
+	if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+		block_show = true;
+		
+        $('.grid-container__col-1:eq(0)').fadeIn(800, function(){
+	$(this).next().fadeIn(800, arguments.callee);
+});
+        
+	}
+}
+ 
+$(window).scroll(function(){
+	scrollTracking();
+});
+	
+$(document).ready(function(){ 
+	scrollTracking();
+});
