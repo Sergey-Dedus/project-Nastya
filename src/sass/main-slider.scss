@@ -77,3 +77,24 @@
   object-fit: cover;
   width: 100%;
 }
+
+// === text in slider ======
+h2.animate__animated,
+h3.animate__animated,
+button.text-container__btn {
+  visibility: hidden;
+}
+h2.animate__animated.animate__fadeInRight,
+h3.animate__animated.animate__fadeInRight,
+button.text-container__btn.animate__fadeInRight {
+  visibility: visible;
+}
+.text-container__title.animate__fadeInRight {
+  animation-delay: 300ms;
+}
+.text-container__subtitle.animate__fadeInRight {
+  animation-delay: 700ms;
+}
+.text-container__btn.animate__fadeInRight {
+  animation-delay: 1000ms;
+}
